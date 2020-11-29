@@ -26,7 +26,7 @@ function getUserInof(){
         success: function(res){
             // console.log(res);
             if(res.status !== 0){
-                return layui.layui.msg(res.message)
+                return layui.layer.msg(res.message)
             }
             renderAvatar(res.data);
         }
